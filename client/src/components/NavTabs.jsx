@@ -30,7 +30,7 @@ const NavTabs = () => {
   };
 
   return (
-    <nav className="bg-red-600 text-white">
+    <nav className="bg-blue-900 text-white">
       {/* Top Navigation - Same as before */}
       {/* ... Previous top navigation code ... */}
 
@@ -42,28 +42,28 @@ const NavTabs = () => {
             <div className="group relative">
               <Link
                 to="/buy"
-                className="px-4 py-3 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 inline-block"
+                className="px-4 py-3 hover:text-blue-900 border-b-2 border-transparent hover:border-blue-900 inline-block"
               >
                 Buy
               </Link>
               <div className="hidden group-hover:block absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-b-md z-50 animate-slideIn">
                 <div className="p-4 space-y-4">
                   <div>
-                    <h3 className="font-semibold text-red-600 mb-2">
+                    <h3 className="font-semibold text-blue-900 mb-2">
                       Categories
                     </h3>
                     {dropdownContent.buy.categories.map((item) => (
                       <Link
                         key={item}
                         to={`/buy/${item.toLowerCase().replace(/ /g, "-")}`}
-                        className="block py-1 hover:text-red-600"
+                        className="block py-1 hover:text-blue-900"
                       >
                         {item}
                       </Link>
                     ))}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-red-600 mb-2">
+                    <h3 className="font-semibold text-blue-900 mb-2">
                       Property Types
                     </h3>
                     {dropdownContent.buy.propertyTypes.map((item) => (
@@ -72,7 +72,7 @@ const NavTabs = () => {
                         to={`/buy/property-type/${item
                           .toLowerCase()
                           .replace(/ /g, "-")}`}
-                        className="block py-1 hover:text-red-600"
+                        className="block py-1 hover:text-blue-900"
                       >
                         {item}
                       </Link>
@@ -86,28 +86,28 @@ const NavTabs = () => {
             <div className="group relative">
               <Link
                 to="/rent"
-                className="px-4 py-3 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 inline-block"
+                className="px-4 py-3 hover:text-blue-900 border-b-2 border-transparent hover:border-blue-900 inline-block"
               >
                 Rent
               </Link>
               <div className="hidden group-hover:block absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-b-md z-50 animate-slideIn">
                 <div className="p-4 space-y-4">
                   <div>
-                    <h3 className="font-semibold text-red-600 mb-2">
+                    <h3 className="font-semibold text-blue-900 mb-2">
                       Categories
                     </h3>
                     {dropdownContent.rent.categories.map((item) => (
                       <Link
                         key={item}
                         to={`/rent/${item.toLowerCase().replace(/ /g, "-")}`}
-                        className="block py-1 hover:text-red-600"
+                        className="block py-1 hover:text-blue-900"
                       >
                         {item}
                       </Link>
                     ))}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-red-600 mb-2">
+                    <h3 className="font-semibold text-blue-900 mb-2">
                       Property Types
                     </h3>
                     {dropdownContent.rent.propertyTypes.map((item) => (
@@ -116,7 +116,7 @@ const NavTabs = () => {
                         to={`/rent/property-type/${item
                           .toLowerCase()
                           .replace(/ /g, "-")}`}
-                        className="block py-1 hover:text-red-600"
+                        className="block py-1 hover:text-blue-900"
                       >
                         {item}
                       </Link>
@@ -130,35 +130,35 @@ const NavTabs = () => {
             <div className="group relative">
               <Link
                 to="/sell"
-                className="px-4 py-3 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 inline-block"
+                className="px-4 py-3 hover:text-blue-900 border-b-2 border-transparent hover:border-blue-900 inline-block"
               >
                 Sell
               </Link>
               <div className="hidden group-hover:block absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-b-md z-50 animate-slideIn">
                 <div className="p-4 space-y-4">
                   <div>
-                    <h3 className="font-semibold text-red-600 mb-2">
+                    <h3 className="font-semibold text-blue-900 mb-2">
                       Services
                     </h3>
                     {dropdownContent.sell.services.map((item) => (
                       <Link
                         key={item}
                         to={`/sell/${item.toLowerCase().replace(/ /g, "-")}`}
-                        className="block py-1 hover:text-red-600"
+                        className="block py-1 hover:text-blue-900"
                       >
                         {item}
                       </Link>
                     ))}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-red-600 mb-2">Tools</h3>
+                    <h3 className="font-semibold text-blue-900 mb-2">Tools</h3>
                     {dropdownContent.sell.tools.map((item) => (
                       <Link
                         key={item}
                         to={`/sell/tools/${item
                           .toLowerCase()
                           .replace(/ /g, "-")}`}
-                        className="block py-1 hover:text-red-600"
+                        className="block py-1 hover:text-blue-900"
                       >
                         {item}
                       </Link>
@@ -174,7 +174,7 @@ const NavTabs = () => {
                 <Link
                   key={item}
                   to={`/${item.toLowerCase().replace(/ /g, "-")}`}
-                  className="px-4 py-3 hover:text-red-600 border-b-2 border-transparent hover:border-red-600"
+                  className="px-4 py-3 hover:text-blue-900 border-b-2 border-transparent hover:border-blue-900"
                 >
                   {item}
                 </Link>

@@ -54,7 +54,7 @@ const FlatCard = ({ property }) => {
                 {/* Property Features */}
                 <div className="grid grid-cols-3 gap-4 bg-gray-50 p-4 rounded-lg mb-4">
                   <div className="flex items-center space-x-3">
-                    <Ruler size={20} className="text-red-500" />
+                    <Ruler size={20} className="text-blue-500" />
                     <div>
                       <div className="text-gray-600 text-xs uppercase">
                         {property.areaType}
@@ -63,7 +63,7 @@ const FlatCard = ({ property }) => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Building2 size={20} className="text-red-500" />
+                    <Building2 size={20} className="text-blue-500" />
                     <div>
                       <div className="text-gray-600 text-xs uppercase">
                         STATUS
@@ -72,7 +72,7 @@ const FlatCard = ({ property }) => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Building size={20} className="text-red-500" />
+                    <Building size={20} className="text-blue-500" />
                     <div>
                       <div className="text-gray-600 text-xs uppercase">
                         FLOOR
@@ -120,10 +120,10 @@ const FlatCard = ({ property }) => {
                     ₹{property.pricePerSqft} per sqft
                   </div>
                 )}
-                <button className="w-full bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 mb-2">
+                <button className="w-full bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 mb-2">
                   Contact Owner
                 </button>
-                <button className="w-full border border-red-500 text-red-500 px-6 py-2 rounded-lg hover:bg-red-50">
+                <button className="w-full border border-blue-500 text-blue-500 px-6 py-2 rounded-lg hover:bg-blue-50">
                   Get Phone No.
                 </button>
               </div>

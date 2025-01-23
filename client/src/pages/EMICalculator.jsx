@@ -87,7 +87,7 @@ const EMICalculator = () => {
               />
             </div>
 
-            <button className="w-full bg-red-500 text-white py-3 rounded-md hover:bg-red-600">
+            <button className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600">
               Recalculate Your EMI
             </button>
           </div>
@@ -145,7 +145,7 @@ const EMICalculator = () => {
                         </p>
                       </div>
                     </div>
-                    <button className="text-red-500 font-medium">View</button>
+                    <button className="text-blue-500 font-medium">View</button>
                   </div>
                 ))}
               </div>

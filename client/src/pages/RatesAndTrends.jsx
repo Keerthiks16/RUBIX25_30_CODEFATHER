@@ -74,7 +74,7 @@ const RatesAndTrends = () => {
               placeholder="City, Locality, Project"
               className="w-full max-w-xl p-3 border rounded-lg mr-4"
             />
-            <button className="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700">
+            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
               SHOW TRENDS
             </button>
           </div>

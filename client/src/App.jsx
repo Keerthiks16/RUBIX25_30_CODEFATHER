@@ -11,6 +11,8 @@ import GovAidPage from "./pages/GovAidPage";
 import Footer from "./components/Footer";
 import FlatCards from "./pages/FlatCards";
 import PreferredAgents from "./pages/PreferredAgents";
+import FooterV from "./pages/Vinpage/FooterV";
+import RentPaymentTracker from "./pages/RentPaymentTracker";
 const App = () => {
   const { user, authCheck, authLoading } = useAuthStore();
   useEffect(() => {
@@ -55,9 +57,13 @@ const App = () => {
             path="/about-us"
             element={user ? <PreferredAgents /> : <Navigate to="/login" />}
           />
+          <Route
+            path="/sell"
+            element={user ? <RentPaymentTracker /> : <Navigate to="/login" />}
+          />
         </Routes>
       </BrowserRouter>
-      <Footer />
+      <FooterV />
       <Toaster />
     </>
   );

@@ -42,9 +42,9 @@ const PreferredAgents = () => {
       <div className="max-w-7xl mx-auto p-6 bg-white">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800">
-            Preferred Agents in <span className="text-red-600">New York</span>
+            Preferred Agents in <span className="text-blue-600">New York</span>
           </h1>
-          <button className="text-red-600 hover:text-red-700 font-medium flex items-center gap-2">
+          <button className="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2">
             See all
             <span className="text-xl">→</span>
           </button>
@@ -104,8 +104,8 @@ const PreferredAgents = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="p-3 bg-red-50 rounded-lg">
-                    <p className="text-2xl font-bold text-red-600">
+                  <div className="p-3 bg-blue-50 rounded-lg">
+                    <p className="text-2xl font-bold text-blue-600">
                       {agent.propertiesForSale}
                     </p>
                     <p className="text-sm text-gray-600">Properties for Sale</p>

@@ -40,21 +40,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-red-600">
+    <nav className="bg-blue-900">
       {/* Top Header */}
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo and Location */}
           <div className="flex items-center space-x-4">
             <Link to="/" className="text-2xl font-bold text-white">
-              magicbricks
+              HomeHorizon
             </Link>
 
             {/* Location Selector */}
             <div className="relative">
               <button
                 onClick={() => setIsLocationOpen(!isLocationOpen)}
-                className="flex items-center px-3 py-2 text-white hover:bg-red-700 rounded-md"
+                className="flex items-center px-3 py-2 text-white hover:bg-blue-900 rounded-md"
               >
                 <span className="mr-1">📍</span>
                 {selectedCity}
@@ -79,7 +79,7 @@ const Navbar = () => {
                                 setSelectedCity(city);
                                 setIsLocationOpen(false);
                               }}
-                              className="text-left hover:text-red-600"
+                              className="text-left hover:text-blue-900"
                             >
                               {city}
                             </button>
@@ -98,7 +98,7 @@ const Navbar = () => {
                                 setSelectedCity(city);
                                 setIsLocationOpen(false);
                               }}
-                              className="text-left hover:text-red-600"
+                              className="text-left hover:text-blue-900"
                             >
                               {city}
                             </button>
@@ -116,7 +116,7 @@ const Navbar = () => {
                               setSelectedCity(item.name);
                               setIsLocationOpen(false);
                             }}
-                            className="flex items-center space-x-2 hover:text-red-600 w-full"
+                            className="flex items-center space-x-2 hover:text-blue-900 w-full"
                           >
                             <span>{item.flag || item.icon}</span>
                             <span>{item.name}</span>
@@ -134,13 +134,13 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <button
               onClick={() => logout()}
-              className="text-white hover:text-red-200"
+              className="text-white hover:text-blue-200"
             >
               Logout
             </button>
             <Link
               to="/premium"
-              className="bg-white text-red-600 px-4 py-2 rounded-md hover:bg-red-100 transition-colors font-medium"
+              className="bg-white text-blue-900 px-4 py-2 rounded-md hover:bg-blue-100 transition-colors font-medium"
             >
               Unlock Premium Features
             </Link>

@@ -45,8 +45,8 @@ const GovAidPage = () => {
       <Navbar />
       <div className="flex-grow bg-white font-inter">
         <div className="max-w-7xl mx-auto px-5 py-16">
-          <header className="text-center mb-16 py-10 px-5 bg-red-50 rounded-3xl shadow-lg shadow-red-100">
-            <h1 className="text-5xl text-red-600 mb-5 font-bold tracking-tight">
+          <header className="text-center mb-16 py-10 px-5 bg-blue-50 rounded-3xl shadow-lg shadow-blue-100">
+            <h1 className="text-5xl text-blue-600 mb-5 font-bold tracking-tight">
               Housing Assistance
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -63,13 +63,13 @@ const GovAidPage = () => {
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 className="w-full px-6 py-5 border-2 border-gray-200 rounded-xl text-lg 
-                       transition-all duration-300 bg-gray-50 focus:border-red-600 
+                       transition-all duration-300 bg-gray-50 focus:border-blue-600 
                        focus:outline-none focus:bg-white"
               />
               <button
-                className="w-full md:w-auto px-9 py-5 bg-red-600 text-white rounded-xl 
+                className="w-full md:w-auto px-9 py-5 bg-blue-600 text-white rounded-xl 
                            transition-all duration-300 text-lg font-semibold 
-                           shadow-lg shadow-red-200 hover:bg-red-700 
+                           shadow-lg shadow-blue-200 hover:bg-blue-700 
                            hover:-translate-y-0.5"
               >
                 Find Programs
@@ -87,11 +87,11 @@ const GovAidPage = () => {
               >
                 <div className="flex-1">
                   <div className="flex justify-between items-start gap-4 mb-2">
-                    <h4 className="text-xl text-red-600 font-bold mb-2">
+                    <h4 className="text-xl text-blue-600 font-bold mb-2">
                       {program.title}
                     </h4>
                     <span
-                      className="px-3 py-1.5 bg-red-50 text-red-600 rounded-full 
+                      className="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-full 
                     text-sm font-semibold whitespace-nowrap"
                     >
                       {program.tag}
@@ -132,9 +132,9 @@ const GovAidPage = () => {
                   </div>
                 </div>
                 <button
-                  className="w-full bg-red-600 text-white py-3 rounded-lg 
+                  className="w-full bg-blue-600 text-white py-3 rounded-lg 
                 transition-all duration-300 text-base font-semibold 
-                shadow-md shadow-red-100 hover:bg-red-700 
+                shadow-md shadow-blue-100 hover:bg-blue-700 
                 hover:scale-[1.02]"
                 >
                   Apply Now
@@ -144,10 +144,10 @@ const GovAidPage = () => {
           </div>
 
           <div
-            className="bg-red-50 p-12 rounded-3xl text-center mt-16 mb-8 
-                         shadow-lg shadow-red-100"
+            className="bg-blue-50 p-12 rounded-3xl text-center mt-16 mb-8 
+                         shadow-lg shadow-blue-100"
           >
-            <h2 className="text-4xl text-red-600 mb-5 font-bold">
+            <h2 className="text-4xl text-blue-600 mb-5 font-bold">
               Need Assistance?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
@@ -155,9 +155,9 @@ const GovAidPage = () => {
               and guide you through the application process.
             </p>
             <button
-              className="px-9 py-5 bg-red-600 text-white rounded-xl 
+              className="px-9 py-5 bg-blue-600 text-white rounded-xl 
                          transition-all duration-300 text-lg font-semibold 
-                         shadow-lg shadow-red-200 hover:bg-red-700 
+                         shadow-lg shadow-blue-200 hover:bg-blue-700 
                          hover:-translate-y-0.5"
             >
               Schedule Free Consultation
