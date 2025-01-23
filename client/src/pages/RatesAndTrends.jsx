@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import Navbar from "../components/Navbar";
+import { useAuthStore } from "../store/zustand";
 
 const RatesAndTrends = () => {
+  const { user } = useAuthStore();
+
   const [selectedCity, setSelectedCity] = useState("Mumbai");
   const [viewType, setViewType] = useState("Localities");
 

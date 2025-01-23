@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -8,25 +8,38 @@ import { useAuthStore } from "./store/zustand";
 import EMICalculator from "./pages/EMICalculator";
 import RatesAndTrends from "./pages/RatesAndTrends";
 import GovAidPage from "./pages/GovAidPage";
-import Footer from "./components/Footer";
 import FlatCards from "./pages/FlatCards";
 import PreferredAgents from "./pages/PreferredAgents";
 import FooterV from "./pages/Vinpage/FooterV";
 import RentPaymentTracker from "./pages/RentPaymentTracker";
-const App = () => {
+import Application from "./pages/Day2pages/Application";
+
+const ProtectedRoute = ({ children }) => {
   const { user, authCheck, authLoading } = useAuthStore();
+  const [isChecking, setIsChecking] = useState(true);
+
   useEffect(() => {
-    authCheck();
+    const checkAuth = async () => {
+      await authCheck();
+      setIsChecking(false);
+    };
+    checkAuth();
   }, [authCheck]);
-  // console.log("user", user);
+
+  if (isChecking) {
+    // Optional: Add a loading spinner or placeholder
+    return <div>Loading...</div>;
+  }
+
+  return user ? children : <Navigate to="/login" />;
+};
+
+const App = () => {
+  const { user } = useAuthStore();
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={user ? <Home /> : <Navigate to="/login" />}
-          />
           <Route
             path="/signup"
             element={!user ? <Signup /> : <Navigate to="/" />}
@@ -35,32 +48,64 @@ const App = () => {
             path="/login"
             element={!user ? <Login /> : <Navigate to="/" />}
           />
+
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/emi-calculator"
-            element={user ? <EMICalculator /> : <Navigate to="/login" />}
+            element={
+              <ProtectedRoute>
+                <EMICalculator />
+              </ProtectedRoute>
+            }
           />
-          {/* government-schemes */}
+          <Route
+            path="/rates-trends"
+            element={
+              <ProtectedRoute>
+                <RatesAndTrends />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/government-schemes"
-            element={user ? <GovAidPage /> : <Navigate to="/login" />}
+            element={
+              <ProtectedRoute>
+                <GovAidPage />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/buy"
-            element={user ? <FlatCards /> : <Navigate to="/login" />}
-          />
-          <Route
-            path="/help"
-            element={user ? <RatesAndTrends /> : <Navigate to="/login" />}
-          />
-
-          <Route
-            path="/about-us"
-            element={user ? <PreferredAgents /> : <Navigate to="/login" />}
+            element={
+              <ProtectedRoute>
+                <FlatCards />
+              </ProtectedRoute>
+            }
           />
           <Route
             path="/sell"
-            element={user ? <RentPaymentTracker /> : <Navigate to="/login" />}
+            element={
+              <ProtectedRoute>
+                <RentPaymentTracker />
+              </ProtectedRoute>
+            }
           />
+          <Route
+            path="/rent"
+            element={
+              <ProtectedRoute>
+                <Application />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/about-us" element={<PreferredAgents />} />
         </Routes>
       </BrowserRouter>
       <FooterV />

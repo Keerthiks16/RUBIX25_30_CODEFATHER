@@ -6,37 +6,96 @@ const GovAidPage = () => {
 
   // ... programs array remains the same ...
 
+  // const programs = [
+  //   {
+  //     id: 1,
+  //     title: "First-Time Home Buyer Incentive",
+  //     tag: "Purchase Assistance",
+  //     description:
+  //       "Receive up to 10% of your first home's purchase price as government assistance to make homeownership more affordable.",
+  //     eligibility:
+  //       "First-time buyers with annual household income under $120,000",
+  //     benefit: "Up to $30,000 in purchase assistance",
+  //     deadline: "Ongoing applications accepted",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Home Renovation Grant",
+  //     tag: "Renovation Aid",
+  //     description:
+  //       "Get financial support for essential home improvements, repairs, and energy-efficient upgrades.",
+  //     eligibility: "Current homeowners and registered landlords",
+  //     benefit: "Grants up to $15,000 for qualified renovations",
+  //     deadline: "December 31, 2024",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Rental Assistance Program",
+  //     tag: "Rental Support",
+  //     description:
+  //       "Monthly rental payment assistance program designed to help low-income households maintain stable housing.",
+  //     eligibility: "Households with income below $70,000/year",
+  //     benefit: "Monthly support up to $800",
+  //     deadline: "Monthly application cycles",
+  //   },
+  // ];
   const programs = [
     {
       id: 1,
-      title: "First-Time Home Buyer Incentive",
-      tag: "Purchase Assistance",
+      title: "Pradhan Mantri Awas Yojana (PMAY)",
+      tag: "Affordable Housing",
       description:
-        "Receive up to 10% of your first home's purchase price as government assistance to make homeownership more affordable.",
+        "Provides central assistance to states and union territories to enable construction of affordable housing for the urban poor.",
       eligibility:
-        "First-time buyers with annual household income under $120,000",
-      benefit: "Up to $30,000 in purchase assistance",
-      deadline: "Ongoing applications accepted",
+        "Economically weaker sections (EWS) and low-income groups (LIG) in urban areas",
+      benefit:
+        "Subsidies and credit-linked subsidies for construction/purchase of affordable homes",
+      deadline: "Ongoing scheme with periodic application cycles",
     },
     {
       id: 2,
-      title: "Home Renovation Grant",
-      tag: "Renovation Aid",
+      title: "Credit Linked Subsidy Scheme (CLSS)",
+      tag: "Home Loan Assistance",
       description:
-        "Get financial support for essential home improvements, repairs, and energy-efficient upgrades.",
-      eligibility: "Current homeowners and registered landlords",
-      benefit: "Grants up to $15,000 for qualified renovations",
-      deadline: "December 31, 2024",
+        "Provides interest subsidy on home loans to make homeownership more accessible for the urban poor and middle-income groups.",
+      eligibility:
+        "EWS, LIG, and middle-income groups (MIG) with household income limits",
+      benefit: "Interest subsidy of up to ₹2.67 lakhs on home loans",
+      deadline: "Ongoing scheme with periodic application cycles",
     },
     {
       id: 3,
-      title: "Rental Assistance Program",
-      tag: "Rental Support",
+      title:
+        "Deendayal Antyodaya Yojana - National Urban Livelihood Mission (DAY-NULM)",
+      tag: "Rental Housing",
       description:
-        "Monthly rental payment assistance program designed to help low-income households maintain stable housing.",
-      eligibility: "Households with income below $70,000/year",
-      benefit: "Monthly support up to $800",
-      deadline: "Monthly application cycles",
+        "Provides affordable rental housing for migrant workers and the urban poor through the development of Affordable Rental Housing Complexes (ARHCs).",
+      eligibility:
+        "Migrant workers, urban poor, and economically disadvantaged groups",
+      benefit: "Access to affordable rental housing units",
+      deadline: "Ongoing scheme with periodic application cycles",
+    },
+    {
+      id: 4,
+      title: "Prime Minister's Awas Yojana - Rural (PMAY-G)",
+      tag: "Rural Housing",
+      description:
+        "Provides financial assistance to the rural poor for the construction of pucca houses with basic amenities.",
+      eligibility:
+        "Households from Economically Weaker Sections (EWS) and Low-Income Groups (LIG) in rural areas",
+      benefit: "Financial assistance of up to ₹1.2 lakhs per household",
+      deadline: "Ongoing scheme with periodic application cycles",
+    },
+    {
+      id: 5,
+      title: "Rajiv Awas Yojana (RAY)",
+      tag: "Slum Redevelopment",
+      description:
+        "Aims to create a 'Slum-Free India' through financial and technical assistance for the redevelopment and rehabilitation of slums.",
+      eligibility: "Households residing in notified/declared slum areas",
+      benefit:
+        "Provision of affordable housing units, basic civic infrastructure, and essential services",
+      deadline: "Ongoing scheme with periodic application cycles",
     },
   ];
 

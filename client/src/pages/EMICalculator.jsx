@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { PieChart, Pie, Cell } from "recharts";
+import { Building2, AlertCircle } from "lucide-react";
 import Navbar from "../components/Navbar";
 
 const EMICalculator = () => {
-  const [loanAmount, setLoanAmount] = useState(8000000);
+  const [loanAmount, setLoanAmount] = useState(500000);
   const [tenure, setTenure] = useState(30);
   const [interestRate, setInterestRate] = useState(8.5);
+  const [location, setLocation] = useState("urban");
+  const [income, setIncome] = useState(0);
 
   const calculateEMI = () => {
     const p = loanAmount;
@@ -17,7 +20,30 @@ const EMICalculator = () => {
     return { emi, totalInterest };
   };
 
+  const calculateSubsidy = () => {
+    let subsidy = 0;
+    if (location === "urban") {
+      if (income <= 300000) {
+        subsidy = 300000;
+      } else if (income <= 600000) {
+        subsidy = 200000;
+      } else if (income <= 1200000) {
+        subsidy = 100000;
+      }
+    } else if (location === "rural") {
+      if (income <= 200000) {
+        subsidy = 250000;
+      } else if (income <= 400000) {
+        subsidy = 150000;
+      } else if (income <= 800000) {
+        subsidy = 75000;
+      }
+    }
+    return subsidy;
+  };
+
   const { emi, totalInterest } = calculateEMI();
+  const subsidy = calculateSubsidy();
   const pieData = [
     { name: "Principal", value: loanAmount },
     { name: "Interest", value: totalInterest },
@@ -41,11 +67,13 @@ const EMICalculator = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-6xl mx-auto p-6 bg-white">
-        <h1 className="text-2xl font-bold mb-4">Home Loan EMI Calculator</h1>
+      <div className="max-w-4xl mx-auto p-6 bg-white">
+        <h1 className="text-2xl font-bold mb-4">
+          Home Loan EMI and Subsidy Calculator
+        </h1>
         <p className="text-gray-600 mb-8">
-          Home Loan EMI Calculator provides an instant estimate of your EMI by
-          requiring the loan amount, interest rate, and loan tenure.
+          Estimate your home loan EMI and check your eligibility for government
+          housing subsidies.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -87,16 +115,41 @@ const EMICalculator = () => {
               />
             </div>
 
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Location
+              </label>
+              <select
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+                className="w-full p-2 border rounded"
+              >
+                <option value="urban">Urban</option>
+                <option value="rural">Rural</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Annual Household Income
+              </label>
+              <input
+                type="number"
+                value={income}
+                onChange={(e) => setIncome(Number(e.target.value))}
+                className="w-full p-2 border rounded"
+              />
+            </div>
+
             <button className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600">
-              Recalculate Your EMI
+              Recalculate EMI and Subsidy
             </button>
           </div>
 
           <div>
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-4">
-                You are Eligible for EMI Amount ₹
-                {Math.round(emi).toLocaleString()}
+                Your Estimated EMI: ₹{Math.round(emi).toLocaleString()}
               </h2>
               <div className="flex justify-center">
                 <PieChart width={200} height={200}>
@@ -124,6 +177,35 @@ const EMICalculator = () => {
                   <span>₹{Math.round(totalInterest).toLocaleString()}</span>
                 </div>
               </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Housing Subsidy Eligibility
+              </h3>
+              {subsidy > 0 ? (
+                <div className="p-4 bg-gray-50 rounded-lg">
+                  <div className="flex items-center gap-3">
+                    <Building2 className="w-6 h-6 text-green-600" />
+                    <p>
+                      Based on your income of ₹500,000 and location in an urban
+                      area, you may be eligible for a housing subsidy of up to
+                      ₹200,000.
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <div className="p-4 bg-gray-50 rounded-lg">
+                  <div className="flex items-center gap-3">
+                    <AlertCircle className="w-6 h-6 text-blue-500" />
+                    <p>
+                      Unfortunately, you do not seem to be eligible for any
+                      housing subsidies based on your provided income and
+                      location.
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
 
             <div>
