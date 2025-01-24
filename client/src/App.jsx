@@ -13,6 +13,13 @@ import PreferredAgents from "./pages/PreferredAgents";
 import FooterV from "./pages/Vinpage/FooterV";
 import RentPaymentTracker from "./pages/RentPaymentTracker";
 import Application from "./pages/Day2pages/Application";
+import Chatbot from "./pages/Chatbot";
+import Property from "./pages/Vinpage/Property";
+import ReadyToMove from "./pages/Day2pages/ReadyToMove";
+import UnderConstruction from "./pages/Day2pages/UnderConstruction";
+import LowToHigh from "./pages/Day2pages/LowToHigh";
+import AreaWiseProperties from "./pages/Day2pages/AreaWiseProperty";
+import CityProperty from "./pages/Day2pages/CityProperty";
 
 const ProtectedRoute = ({ children }) => {
   const { user, authCheck, authLoading } = useAuthStore();
@@ -90,7 +97,7 @@ const App = () => {
             }
           />
           <Route
-            path="/sell"
+            path="/rent-payment-tracker"
             element={
               <ProtectedRoute>
                 <RentPaymentTracker />
@@ -105,9 +112,66 @@ const App = () => {
               </ProtectedRoute>
             }
           />
+          <Route
+            path="/property"
+            element={
+              <ProtectedRoute>
+                <Property />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/buy/ready-to-move"
+            element={
+              <ProtectedRoute>
+                <ReadyToMove />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/buy/under-construction"
+            element={
+              <ProtectedRoute>
+                <UnderConstruction />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/buy/property-type/price"
+            element={
+              <ProtectedRoute>
+                <LowToHigh />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/buy/property-type/area"
+            element={
+              <ProtectedRoute>
+                <AreaWiseProperties />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/search/*"
+            element={
+              <ProtectedRoute>
+                <FlatCards />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:city"
+            element={
+              <ProtectedRoute>
+                <CityProperty />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/about-us" element={<PreferredAgents />} />
         </Routes>
       </BrowserRouter>
+      {/* <Chatbot /> */}
       <FooterV />
       <Toaster />
     </>

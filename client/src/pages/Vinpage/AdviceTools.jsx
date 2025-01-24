@@ -1,5 +1,11 @@
 import React from "react";
-import { TrendingUp, Calculator, Wallet2, FileText } from "lucide-react";
+import {
+  TrendingUp,
+  Calculator,
+  Wallet2,
+  FileText,
+  ListTodo,
+} from "lucide-react";
 
 const AdviceToolsCard = ({ icon: Icon, title, description, link }) => (
   <div className="bg-white rounded-lg p-6 shadow-lg transition-shadow hover:shadow-[rgba(136,165,191,0.48)_6px_2px_16px_0px,_rgba(255,255,255,0.8)_-6px_-2px_16px_0px]">
@@ -37,10 +43,10 @@ const AdviceTools = () => {
       link: "/emi-calculator",
     },
     {
-      icon: Wallet2,
-      title: "Investment Hotspot",
-      description: "Discover the top localities in your city for investment",
-      link: "/investment-hotspot",
+      icon: ListTodo,
+      title: "Rent Payment Tracker",
+      description: "Track your rent payments and get reminders on due dates",
+      link: "/rent-payment-tracker",
     },
     {
       icon: FileText,

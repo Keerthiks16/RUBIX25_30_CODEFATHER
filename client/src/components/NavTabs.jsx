@@ -8,13 +8,7 @@ const NavTabs = () => {
   const dropdownContent = {
     buy: {
       categories: ["Ready to Move", "Under Construction", "New Projects"],
-      propertyTypes: [
-        "Apartments",
-        "Builder Floors",
-        "Houses",
-        "Villas",
-        "Plots",
-      ],
+      propertyTypes: ["Price", "Area", "Houses", "Villas", "Plots"],
       budget: ["Under 50 Lac", "50-80 Lac", "80L-1Cr", "Above 1Cr"],
     },
     rent: {

@@ -1,0 +1,548 @@
+[
+  {
+    "id": 1,
+    "type": "1 BHK",
+    "projectName": "Green Valley Residences",
+    "title": "Compact 1 BHK in Peaceful Location",
+    "location": {
+      "city": "Mumbai",
+      "area": "Asangaon Beyond Thane"
+    },
+    "superArea": 593,
+    "price": 1900000,
+    "pricePerSqft": 3204,
+    "status": "Ready to Move",
+    "floor": "4 out of 5",
+    "amenities": ["Gym", "Swimming Pool", "Parking"],
+    "owner": {
+      "name": "Rajesh Kumar Sharma",
+      "contact": "9876543210",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property1-1.jpg",
+      "/images/property1-2.jpg",
+      "/images/property1-3.jpg"
+    ],
+    "description": "Cozy 1 BHK apartment in Asangaon Beyond Thane, offering modern amenities like a gym and swimming pool. Located on the 4th floor of a 5-story building, this property is ready to move in and provides excellent value at 3,204 per sq ft."
+  },
+  {
+    "id": 2,
+    "type": "2 BHK",
+    "projectName": "Sunrise Apartments",
+    "title": "Spacious 2 BHK with Modern Amenities",
+    "location": {
+      "city": "Mumbai",
+      "area": "Kandivali"
+    },
+    "superArea": 800,
+    "price": 6500000,
+    "pricePerSqft": 8125,
+    "status": "Ready to Move",
+    "floor": "7 out of 10",
+    "amenities": ["Gym", "Clubhouse", "Parking"],
+    "owner": {
+      "name": "Amit Desai",
+      "contact": "9876543211",
+      "isPremium": false
+    },
+    "images": [
+      "/images/property2-1.jpg",
+      "/images/property2-2.jpg",
+      "/images/property2-3.jpg"
+    ],
+    "description": "Spacious 2 BHK apartment in Kandivali, situated on the 7th floor of a 10-story building. Features a well-equipped gym, clubhouse, and parking. A comfortable living space with a price of 8,125 per sq ft."
+  },
+  {
+    "id": 3,
+    "type": "House",
+    "projectName": "Emerald Garden Homes",
+    "title": "Luxurious Independent House with Garden",
+    "location": {
+      "city": "Mumbai",
+      "area": "Borivali"
+    },
+    "superArea": 2000,
+    "price": 12000000,
+    "pricePerSqft": 6000,
+    "status": "Under Construction",
+    "floor": "2 out of 3",
+    "amenities": ["Backyard", "Garage", "Garden"],
+    "owner": {
+      "name": "Priya Patel",
+      "contact": "9876543212",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property3-1.jpg",
+      "/images/property3-2.jpg",
+      "/images/property3-3.jpg"
+    ],
+    "description": "Expansive house in Borivali currently under construction, offering 2000 sq ft of living space. Features a backyard, garage, and garden. Located on the 2nd floor of a 3-story building, this property provides ample room and amenities."
+  },
+  {
+    "id": 4,
+    "type": "3 BHK",
+    "projectName": "Skyline Towers",
+    "title": "Premium 3 BHK with Terrace View",
+    "location": {
+      "city": "Mumbai",
+      "area": "Andheri"
+    },
+    "superArea": 1200,
+    "price": 9800000,
+    "pricePerSqft": 8166,
+    "status": "Ready to Move",
+    "floor": "9 out of 12",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Terrace"],
+    "owner": {
+      "name": "Sanjay Mehta",
+      "contact": "9876543213",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property4-1.jpg",
+      "/images/property4-2.jpg",
+      "/images/property4-3.jpg"
+    ],
+    "description": "Luxurious 3 BHK apartment in Andheri, located on the 9th floor of a 12-story building. Comes with a gym, clubhouse, parking, and a private terrace. Priced at 8,166 per sq ft and ready to move in."
+  },
+  {
+    "id": 5,
+    "type": "Studio",
+    "projectName": "Urban Nest",
+    "title": "Compact Studio in Central Location",
+    "location": {
+      "city": "Mumbai",
+      "area": "Dadar"
+    },
+    "superArea": 450,
+    "price": 4500000,
+    "pricePerSqft": 10000,
+    "status": "Ready to Move",
+    "floor": "5 out of 8",
+    "amenities": ["Gym", "Parking"],
+    "owner": {
+      "name": "Neha Sharma",
+      "contact": "9876543214",
+      "isPremium": false
+    },
+    "images": [
+      "/images/property5-1.jpg",
+      "/images/property5-2.jpg",
+      "/images/property5-3.jpg"
+    ],
+    "description": "Compact studio apartment in Dadar, perfect for single professionals or investors. Located on the 5th floor of an 8-story building, it offers a gym and parking. Competitively priced at 10,000 per sq ft."
+  },
+  {
+    "id": 6,
+    "type": "2 BHK",
+    "projectName": "Harmony Residency",
+    "title": "Comfortable 2 BHK in Ghatkopar",
+    "location": {
+      "city": "Mumbai",
+      "area": "Ghatkopar"
+    },
+    "superArea": 900,
+    "price": 7200000,
+    "pricePerSqft": 8000,
+    "status": "Under Construction",
+    "floor": "6 out of 10",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Park"],
+    "owner": {
+      "name": "Vikram Iyer",
+      "contact": "9876543215",
+      "isPremium": false
+    },
+    "images": [
+      "/images/property6-1.jpg",
+      "/images/property6-2.jpg",
+      "/images/property6-3.jpg"
+    ],
+    "description": "Comfortable 2 BHK apartment in Ghatkopar, situated on the 6th floor of a 10-story building. Features a gym, clubhouse, parking, and a park. Priced at 8,000 per sq ft and ready to move in."
+  },
+  {
+    "id": 7,
+    "type": "1 BHK",
+    "projectName": "Silver Oaks Apartments",
+    "title": "Cozy 1 BHK in Thane",
+    "location": {
+      "city": "Mumbai",
+      "area": "Thane"
+    },
+    "superArea": 550,
+    "price": 3800000,
+    "pricePerSqft": 6909,
+    "status": "Under Construction",
+    "floor": "3 out of 7",
+    "amenities": ["Gym", "Parking"],
+    "owner": {
+      "name": "Anjali Deshmukh",
+      "contact": "9876543216",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property7-1.jpg",
+      "/images/property7-2.jpg",
+      "/images/property7-3.jpg"
+    ],
+    "description": "Charming 1 BHK apartment in Thane, located on the 3rd floor of a 7-story building. Features a gym and parking. Attractively priced at 6,909 per sq ft and ready to move in."
+  },
+  {
+    "id": 8,
+    "type": "3 BHK",
+    "projectName": "Lakeside Towers",
+    "title": "Luxurious 3 BHK with Premium Amenities",
+    "location": {
+      "city": "Mumbai",
+      "area": "Powai"
+    },
+    "superArea": 1500,
+    "price": 17500000,
+    "pricePerSqft": 11667,
+    "status": "Ready to Move",
+    "floor": "12 out of 15",
+    "amenities": ["Gym", "Swimming Pool", "Parking", "Jogging Track"],
+    "owner": {
+      "name": "Rahul Khanna",
+      "contact": "9876543217",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property8-1.jpg",
+      "/images/property8-2.jpg",
+      "/images/property8-3.jpg"
+    ],
+    "description": "Premium 3 BHK apartment in Powai, situated on the top floor of a 15-story building. Offers luxurious amenities including a gym, swimming pool, parking, and a jogging track. Priced at a premium 11,667 per sq ft."
+  },
+  {
+    "id": 9,
+    "type": "2 BHK",
+    "projectName": "Ocean View Residency",
+    "title": "Elegant 2 BHK in Bandra",
+    "location": {
+      "city": "Mumbai",
+      "area": "Bandra"
+    },
+    "superArea": 950,
+    "price": 12000000,
+    "pricePerSqft": 12632,
+    "status": "Ready to Move",
+    "floor": "8 out of 10",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Garden"],
+    "owner": {
+      "name": "Deepa Raman",
+      "contact": "9876543218",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property9-1.jpg",
+      "/images/property9-2.jpg",
+      "/images/property9-3.jpg"
+    ],
+    "description": "Elegant 2 BHK apartment in the sought-after Bandra area. Located on the 8th floor of a 10-story building, it offers a gym, clubhouse, parking, and a garden. High-end property priced at 12,632 per sq ft."
+  },
+  {
+    "id": 10,
+    "type": "1 BHK",
+    "projectName": "Sunrise Heights",
+    "title": "Affordable 1 BHK in Malad",
+    "location": {
+      "city": "Mumbai",
+      "area": "Malad"
+    },
+    "superArea": 600,
+    "price": 4200000,
+    "pricePerSqft": 7000,
+    "status": "Ready to Move",
+    "floor": "4 out of 8",
+    "amenities": ["Gym", "Parking"],
+    "owner": {
+      "name": "Rohan Patil",
+      "contact": "9876543219",
+      "isPremium": false
+    },
+    "images": [
+      "/images/property10-1.jpg",
+      "/images/property10-2.jpg",
+      "/images/property10-3.jpg"
+    ],
+    "description": "Comfortable 1 BHK apartment in Malad, situated on the 4th floor of an 8-story building. Comes with a gym and parking. Reasonably priced at 7,000 per sq ft and ready to move in."
+  },
+  {
+    "id": 11,
+    "type": "2 BHK",
+    "projectName": "Riverside Residences",
+    "title": "Comfortable 2 BHK in Navi Mumbai",
+    "location": {
+      "city": "Mumbai",
+      "area": "Navi Mumbai"
+    },
+    "superArea": 850,
+    "price": 6800000,
+    "pricePerSqft": 8000,
+    "status": "Ready to Move",
+    "floor": "5 out of 9",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Park"],
+    "owner": {
+      "name": "Arun Sharma",
+      "contact": "9876543220",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property11-1.jpg",
+      "/images/property11-2.jpg",
+      "/images/property11-3.jpg"
+    ],
+    "description": "Well-designed 2 BHK apartment in Navi Mumbai, located on the 5th floor of a 9-story building. Features a gym, clubhouse, parking, and a park. Priced at 8,000 per sq ft and ready to move in."
+  },
+  {
+    "id": 12,
+    "type": "3 BHK",
+    "projectName": "Green Meadows",
+    "title": "Spacious 3 BHK in Goregaon",
+    "location": {
+      "city": "Mumbai",
+      "area": "Goregaon"
+    },
+    "superArea": 1400,
+    "price": 13500000,
+    "pricePerSqft": 9643,
+    "status": "Under Construction",
+    "floor": "10 out of 12",
+    "amenities": ["Gym", "Swimming Pool", "Parking", "Terrace"],
+    "owner": {
+      "name": "Kavita Patel",
+      "contact": "9876543221",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property12-1.jpg",
+      "/images/property12-2.jpg",
+      "/images/property12-3.jpg"
+    ],
+    "description": "Spacious 3 BHK apartment in Goregaon, situated on the 10th floor of a 12-story building. Offers luxurious amenities including a gym, swimming pool, parking, and a private terrace. Priced at 9,643 per sq ft."
+  },
+  {
+    "id": 13,
+    "type": "1 BHK",
+    "projectName": "Skyline Apex",
+    "title": "Premium 1 BHK in Worli",
+    "location": {
+      "city": "Mumbai",
+      "area": "Worli"
+    },
+    "superArea": 550,
+    "price": 6500000,
+    "pricePerSqft": 11818,
+    "status": "Ready to Move",
+    "floor": "6 out of 8",
+    "amenities": ["Gym", "Parking", "Terrace"],
+    "owner": {
+      "name": "Meera Nair",
+      "contact": "9876543222",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property13-1.jpg",
+      "/images/property13-2.jpg",
+      "/images/property13-3.jpg"
+    ],
+    "description": "Luxurious 1 BHK apartment in the prime Worli area. Located on the 6th floor of an 8-story building, it features a gym, parking, and a private terrace. Premium property priced at 11,818 per sq ft."
+  },
+  {
+    "id": 14,
+    "type": "2 BHK",
+    "projectName": "Marina Towers",
+    "title": "Elegant 2 BHK in Vashi",
+    "location": {
+      "city": "Mumbai",
+      "area": "Vashi"
+    },
+    "superArea": 900,
+    "price": 7500000,
+    "pricePerSqft": 8333,
+    "status": "Ready to Move",
+    "floor": "7 out of 10",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Garden"],
+    "owner": {
+      "name": "Vishal Gupta",
+      "contact": "9876543223",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property14-1.jpg",
+      "/images/property14-2.jpg",
+      "/images/property14-3.jpg"
+    ],
+    "description": "Attractive 2 BHK apartment in Vashi, located on the 7th floor of a 10-story building. Offers a gym, clubhouse, parking, and a garden. Well-priced at 8,333 per sq ft and ready to move in."
+  },
+  {
+    "id": 15,
+    "type": "Studio",
+    "projectName": "Urban Loft",
+    "title": "Compact Studio in Juhu",
+    "location": {
+      "city": "Mumbai",
+      "area": "Juhu"
+    },
+    "superArea": 400,
+    "price": 5200000,
+    "pricePerSqft": 13000,
+    "status": "Under Construction",
+    "floor": "4 out of 6",
+    "amenities": ["Gym", "Parking"],
+    "owner": {
+      "name": "Shruti Joshi",
+      "contact": "9876543224",
+      "isPremium": false
+    },
+    "images": [
+      "/images/property15-1.jpg",
+      "/images/property15-2.jpg",
+      "/images/property15-3.jpg"
+    ],
+    "description": "Compact studio in the prestigious Juhu area, located on the 4th floor of a 6-story building. Features a gym and parking. Attractively priced at 13,000 per sq ft for its prime location."
+  },
+  {
+    "id": 16,
+    "type": "3 BHK",
+    "projectName": "Phoenix Residency",
+    "title": "Luxurious 3 BHK in Chembur",
+    "location": {
+      "city": "Mumbai",
+      "area": "Chembur"
+    },
+    "superArea": 1600,
+    "price": 14800000,
+    "pricePerSqft": 9250,
+    "status": "Ready to Move",
+    "floor": "11 out of 14",
+    "amenities": [
+      "Gym",
+      "Swimming Pool",
+      "Parking",
+      "Terrace",
+      "Jogging Track"
+    ],
+    "owner": {
+      "name": "Arjun Mehta",
+      "contact": "9876543225",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property16-1.jpg",
+      "/images/property16-2.jpg",
+      "/images/property16-3.jpg"
+    ],
+    "description": "Expansive 3 BHK apartment in Chembur, situated on the 11th floor of a 14-story building. Offers premium amenities including a gym, swimming pool, parking, terrace, and jogging track. Priced at 9,250 per sq ft."
+  },
+  {
+    "id": 17,
+    "type": "2 BHK",
+    "projectName": "Shanti Complex",
+    "title": "Comfortable 2 BHK in Mulund",
+    "location": {
+      "city": "Mumbai",
+      "area": "Mulund"
+    },
+    "superArea": 850,
+    "price": 7000000,
+    "pricePerSqft": 8235,
+    "status": "Under Construction",
+    "floor": "6 out of 9",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Park"],
+    "owner": {
+      "name": "Pooja Sharma",
+      "contact": "9876543226",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property17-1.jpg",
+      "/images/property17-2.jpg",
+      "/images/property17-3.jpg"
+    ],
+    "description": "Comfortable 2 BHK apartment in Mulund, located on the 6th floor of a 9-story building. Features a gym, clubhouse, parking, and a park. Reasonably priced at 8,235 per sq ft and ready to move in."
+  },
+  {
+    "id": 18,
+    "type": "1 BHK",
+    "projectName": "Green Valley Apartments",
+    "title": "Affordable 1 BHK in Vikhroli",
+    "location": {
+      "city": "Mumbai",
+      "area": "Vikhroli"
+    },
+    "superArea": 550,
+    "price": 4000000,
+    "pricePerSqft": 7273,
+    "status": "Ready to Move",
+    "floor": "3 out of 6",
+    "amenities": ["Gym", "Parking"],
+    "owner": {
+      "name": "Sameer Kulkarni",
+      "contact": "9876543227",
+      "isPremium": false
+    },
+    "images": [
+      "/images/property18-1.jpg",
+      "/images/property18-2.jpg",
+      "/images/property18-3.jpg"
+    ],
+    "description": "Neat 1 BHK apartment in Vikhroli, situated on the 3rd floor of a 6-story building. Offers a gym and parking. Affordably priced at 7,273 per sq ft and ready to move in."
+  },
+  {
+    "id": 19,
+    "type": "2 BHK",
+    "projectName": "Sea Breeze Residency",
+    "title": "Premium 2 BHK in Santacruz",
+    "location": {
+      "city": "Mumbai",
+      "area": "Santacruz"
+    },
+    "superArea": 800,
+    "price": 9000000,
+    "pricePerSqft": 11250,
+    "status": "Ready to Move",
+    "floor": "5 out of 8",
+    "amenities": ["Gym", "Clubhouse", "Parking", "Garden"],
+    "owner": {
+      "name": "Neha Kapoor",
+      "contact": "9876543228",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property19-1.jpg",
+      "/images/property19-2.jpg",
+      "/images/property19-3.jpg"
+    ],
+    "description": "Elegant 2 BHK apartment in Santacruz, located on the 5th floor of an 8-story building. Offers a gym, clubhouse, parking, and a garden. Premium property priced at 11,250 per sq ft."
+  },
+  {
+    "id": 20,
+    "type": "3 BHK",
+    "projectName": "Luxury Towers",
+    "title": "Ultra-Luxurious 3 BHK in Khar",
+    "location": {
+      "city": "Mumbai",
+      "area": "Khar"
+    },
+    "superArea": 1300,
+    "price": 22000000,
+    "pricePerSqft": 16923,
+    "status": "Under Construction",
+    "floor": "9 out of 11",
+    "amenities": ["Gym", "Swimming Pool", "Parking", "Terrace", "Clubhouse"],
+    "owner": {
+      "name": "Rajesh Patel",
+      "contact": "9876543229",
+      "isPremium": true
+    },
+    "images": [
+      "/images/property20-1.jpg",
+      "/images/property20-2.jpg",
+      "/images/property20-3.jpg"
+    ],
+    "description": "Ultra-luxurious 3 BHK apartment in Khar, situated on the 9th floor of an 11-story building. Offers top-tier amenities including a gym, swimming pool, parking, terrace, and clubhouse. Priced at a premium 16,923 per sq ft."
+  }
+]
