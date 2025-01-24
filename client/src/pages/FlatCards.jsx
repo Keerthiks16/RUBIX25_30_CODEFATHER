@@ -28,7 +28,7 @@ const FlatCard = ({ property }) => {
           <div className="relative w-full md:w-80 h-64">
             <Link to={`/property`}>
               <img
-                src={property.imageUrl}
+                src={property.images[0]}
                 // alt={property.title}
                 className="w-full h-full object-cover"
               />

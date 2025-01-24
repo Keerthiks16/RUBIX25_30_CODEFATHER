@@ -20,7 +20,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property1-1.jpg",
+      "https://media.istockphoto.com/id/1398814566/photo/interior-of-small-apartment-living-room-for-home-office.jpg?s=612x612&w=0&k=20&c=8clwg8hTpvoEwL7253aKdYAUuAp1-usFOacNR5qX-Rg=",
       "/images/property1-2.jpg",
       "/images/property1-3.jpg"
     ],
@@ -47,7 +47,7 @@
       "isPremium": false
     },
     "images": [
-      "/images/property2-1.jpg",
+      "https://t3.ftcdn.net/jpg/03/60/46/44/360_F_360464434_nBakyPQGXS5J3jGVKrSxodvxUUcfuF1Y.jpg",
       "/images/property2-2.jpg",
       "/images/property2-3.jpg"
     ],
@@ -74,7 +74,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property3-1.jpg",
+      "https://cdn.prod.website-files.com/5e395796159b58694fe1232c/637fdce13293c332328cd3ac_estonishing-stay-duo-loftid-110-Foto-Liis-Reiman-6-small.jpg",
       "/images/property3-2.jpg",
       "/images/property3-3.jpg"
     ],
@@ -101,7 +101,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property4-1.jpg",
+      "https://lbcdn.airpaz.com/hotelimages/2380756/estonishing-stay-duo-d94cf267f46eb7702b346d6a9bc0d8ae.jpg",
       "/images/property4-2.jpg",
       "/images/property4-3.jpg"
     ],
@@ -128,7 +128,7 @@
       "isPremium": false
     },
     "images": [
-      "/images/property5-1.jpg",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/312866049.jpg?k=939bcdc9659a0ceafb8cb7b5f9cef822eb33353ab4dccee02d0f6f5679f775aa&o=&hp=1",
       "/images/property5-2.jpg",
       "/images/property5-3.jpg"
     ],
@@ -155,7 +155,7 @@
       "isPremium": false
     },
     "images": [
-      "/images/property6-1.jpg",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/312866093.jpg?k=fd44a067f5bef75417387cd6e0947b6b1d6c38d968944ffc263106787cbe8771&o=&hp=1",
       "/images/property6-2.jpg",
       "/images/property6-3.jpg"
     ],
@@ -182,7 +182,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property7-1.jpg",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/494815011.jpg?k=40f53f7c38daff7dca2fe0bafcdab5efb539e07c7f5af0df66c5ae38605572c8&o=&hp=1",
       "/images/property7-2.jpg",
       "/images/property7-3.jpg"
     ],
@@ -209,7 +209,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property8-1.jpg",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/503615233.jpg?k=bed2f235ebeb2202b32412f0edd3c371d98d2301db39167ca17f363d89cf61b5&o=&hp=1",
       "/images/property8-2.jpg",
       "/images/property8-3.jpg"
     ],
@@ -236,7 +236,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property9-1.jpg",
+      "https://images.trvl-media.com/lodging/90000000/89060000/89050800/89050770/0e3a2d2d.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
       "/images/property9-2.jpg",
       "/images/property9-3.jpg"
     ],
@@ -263,7 +263,7 @@
       "isPremium": false
     },
     "images": [
-      "/images/property10-1.jpg",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/312866084.jpg?k=fd933b5a987fcb9871af832345548d5b0b3ba7ec26b9d948010d8e51d6a43c24&o=&hp=1",
       "/images/property10-2.jpg",
       "/images/property10-3.jpg"
     ],
@@ -290,7 +290,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property11-1.jpg",
+      "https://media.istockphoto.com/id/1365649825/photo/stylish-micro-apartment-for-one.jpg?s=612x612&w=0&k=20&c=B84a7PkFLhZGTG0GPDOxBs2yDjBvy2NHaqZw5_Vp878=",
       "/images/property11-2.jpg",
       "/images/property11-3.jpg"
     ],
@@ -317,7 +317,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property12-1.jpg",
+      "https://media.istockphoto.com/id/1328651059/photo/stylish-designed-studio-apartment.jpg?s=612x612&w=0&k=20&c=cTO9ThgCJtbJKuuVeKPwIuDuoUq_eNejpGKrsHpKzjU=",
       "/images/property12-2.jpg",
       "/images/property12-3.jpg"
     ],
@@ -344,7 +344,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property13-1.jpg",
+      "https://media.fab.com/image_previews/gallery_images/6fa54987-c5d7-47b0-8dc0-d891ede97417/ef57a5a5-d103-49b4-987e-375bb77f4f01.jpg",
       "/images/property13-2.jpg",
       "/images/property13-3.jpg"
     ],
@@ -371,7 +371,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property14-1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQIdIeR0znKmg5iFpdX8fmKpubv1hVQvx9j3Cfz_FdWaPtJWCsu9eSByFAi1C5g2T81UE&usqp=CAU",
       "/images/property14-2.jpg",
       "/images/property14-3.jpg"
     ],
@@ -398,7 +398,7 @@
       "isPremium": false
     },
     "images": [
-      "/images/property15-1.jpg",
+      "https://i.pinimg.com/736x/ac/c7/67/acc76775dbaa77427e2904dc0959998e.jpg",
       "/images/property15-2.jpg",
       "/images/property15-3.jpg"
     ],
@@ -431,7 +431,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property16-1.jpg",
+      "https://www.lushome.com/wp-content/uploads/2015/07/small-apartment-ideas-modern-interior-decorating-2.jpg",
       "/images/property16-2.jpg",
       "/images/property16-3.jpg"
     ],
@@ -458,7 +458,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property17-1.jpg",
+      "https://blakinteriors.com/wp-content/uploads/2023/03/Interior-Design.jpg",
       "/images/property17-2.jpg",
       "/images/property17-3.jpg"
     ],
@@ -485,7 +485,7 @@
       "isPremium": false
     },
     "images": [
-      "/images/property18-1.jpg",
+      "https://i.pinimg.com/originals/a9/14/e3/a914e336ecb850e59424e7fa90cd9be9.jpg",
       "/images/property18-2.jpg",
       "/images/property18-3.jpg"
     ],
@@ -512,7 +512,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property19-1.jpg",
+      "https://i.pinimg.com/originals/05/08/0e/05080e9f303b26bb4917f8f30360be87.jpg",
       "/images/property19-2.jpg",
       "/images/property19-3.jpg"
     ],
@@ -539,7 +539,7 @@
       "isPremium": true
     },
     "images": [
-      "/images/property20-1.jpg",
+      "https://www.bestinteriordesigners.eu/wp-content/uploads/2020/03/A-Luxury-Apartment-in-Russia-Designed-by-Studia-54.jpg",
       "/images/property20-2.jpg",
       "/images/property20-3.jpg"
     ],

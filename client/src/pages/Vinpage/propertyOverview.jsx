@@ -1,8 +1,9 @@
-import { useState } from "react"
-import { Download, Share2, Heart, Zap } from "lucide-react"
+import { useState } from "react";
+import { Download, Share2, Heart, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function PropertyOverview() {
-  const [isSaved, setIsSaved] = useState(false)
+  const [isSaved, setIsSaved] = useState(false);
 
   return (
     <div className="max-w-7xl mx-auto p-4">
@@ -39,7 +40,9 @@ export default function PropertyOverview() {
               <div className="font-medium">₹21.03 K/sq.ft</div>
             </div>
             <div>
-              <div className="text-gray-500 text-sm mb-1">Possession Starts</div>
+              <div className="text-gray-500 text-sm mb-1">
+                Possession Starts
+              </div>
               <div className="font-medium">Dec, 2025</div>
             </div>
             <div>
@@ -77,11 +80,14 @@ export default function PropertyOverview() {
           <div className="mt-8">
             <h2 className="text-xl font-semibold mb-4">More About Ananta</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Located in the thriving northern edge of Mumbai, Mira Road stands as one of the city's most rapidly
-              growing residential hubs. Boasting excellent connectivity to key western suburbs, this location offers
-              unmatched convenience and accessibility.
+              Located in the thriving northern edge of Mumbai, Mira Road stands
+              as one of the city's most rapidly growing residential hubs.
+              Boasting excellent connectivity to key western suburbs, this
+              location offers unmatched convenience and accessibility.
             </p>
-            <button className="text-blue-600 mt-4 text-sm hover:underline">Show More About Project</button>
+            <button className="text-blue-600 mt-4 text-sm hover:underline">
+              Show More About Project
+            </button>
           </div>
         </div>
 
@@ -138,7 +144,9 @@ export default function PropertyOverview() {
                 />
                 <span className="text-sm">
                   I agree to be contacted by Housing and agents via
-                  <span className="block text-gray-500">WhatsApp, SMS, phone, email etc</span>
+                  <span className="block text-gray-500">
+                    WhatsApp, SMS, phone, email etc
+                  </span>
                 </span>
               </label>
 
@@ -154,14 +162,15 @@ export default function PropertyOverview() {
                 type="submit"
                 className="w-full py-3 bg-gray-600 text-white rounded-md hover:bg-gray-700 transition-colors"
               >
-                Get Contact Details
+                <Link to="/application">Get Contact Details</Link>
               </button>
 
               <div className="flex items-center justify-between pt-4">
                 <div>
                   <p className="text-sm font-medium">Still deciding?</p>
                   <p className="text-xs text-gray-500">
-                    Shortlist this property for now & easily come back to it later.
+                    Shortlist this property for now & easily come back to it
+                    later.
                   </p>
                 </div>
                 <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
@@ -173,6 +182,5 @@ export default function PropertyOverview() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

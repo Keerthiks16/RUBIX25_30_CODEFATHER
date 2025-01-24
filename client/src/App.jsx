@@ -20,6 +20,9 @@ import UnderConstruction from "./pages/Day2pages/UnderConstruction";
 import LowToHigh from "./pages/Day2pages/LowToHigh";
 import AreaWiseProperties from "./pages/Day2pages/AreaWiseProperty";
 import CityProperty from "./pages/Day2pages/CityProperty";
+import EMIInfoSection from "./pages/Day3pages/EMICalInfoSection";
+import EMISupplementaryTools from "./pages/Day3pages/EMISupplementaryTools";
+import GovernmentSchemeGuide from "./pages/Day3pages/GovernSchemeGuide";
 
 const ProtectedRoute = ({ children }) => {
   const { user, authCheck, authLoading } = useAuthStore();
@@ -69,6 +72,8 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <EMICalculator />
+                <EMIInfoSection />
+                <EMISupplementaryTools />
               </ProtectedRoute>
             }
           />
@@ -85,6 +90,7 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <GovAidPage />
+                <GovernmentSchemeGuide />
               </ProtectedRoute>
             }
           />
@@ -105,7 +111,7 @@ const App = () => {
             }
           />
           <Route
-            path="/rent"
+            path="/application"
             element={
               <ProtectedRoute>
                 <Application />
